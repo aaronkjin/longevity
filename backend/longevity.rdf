@@ -1,0 +1,609 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11/"
+     xml:base="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#combats -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#combats">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#correspondsWith -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#correspondsWith">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#APOE -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#APOE">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Longevity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The E2 allele of the APOE gene is a strong candidate as a gene associated with lifespan, as it has been found in centenarians.</rdfs:comment>
+        <rdfs:label>APOE</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Active -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Active">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Lifestyle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#combats"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Sedentary"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Well-being"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#correspondsWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Cognitive_Maintenance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Leading an active lifestyle offsets sedentary lifestyles and provides many benefits, such as cognitive maintenance, and muscle benefits spread to other systems as there is crosstalk between systems. Young adults benefit more from resistance training while older adults benefit more from endurance training. The strongest predictor of mortality is the VO2 max.</rdfs:comment>
+        <rdfs:label>Active</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Outcomes"/>
+        <rdfs:label>Aging</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Altered_intercellular_communication -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Altered_intercellular_communication">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Changes in the signaling between cells that can disrupt homeostasis and tissue function. This includes inflammatory responses, neuroendocrine signaling, and interactions within the microenvironment that may promote aging and age-related diseases.</rdfs:comment>
+        <rdfs:label>Altered intercellular communication</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Biology -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Biology">
+        <rdfs:label>Biology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Cellular_senescence -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Cellular_senescence">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>The state in which cells lose the ability to divide and grow, often as a response to damage or stress. While senescent cells can prevent the proliferation of damaged cells (reducing cancer risk), their accumulation over time contributes to aging and age-related diseases by secreting harmful pro-inflammatory factors and enzymes.</rdfs:comment>
+        <rdfs:label>Cellular senescence</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Childhood -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Childhood">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Environment"/>
+        <rdfs:comment>Childhood status and experiences have been related to risk factors and conditions like hypertension, obesity, diabetes, smoking, and biomarkers for cardiovascular diseases. Birth weight and young child growth patterns might be related to prostate breast and lung cancers</rdfs:comment>
+        <rdfs:label>Childhood</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Chronic_Stress -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Chronic_Stress">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Social"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Chronic stress can majorly affect lifespan, and highly stressful early exposures might alter development of certain brain structures in childhood. Chronic stress can also pass to developing babies.</rdfs:comment>
+        <rdfs:label>Chronic Stress</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Chronic_inflammation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Chronic_inflammation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>A prolonged, low-grade inflammation that becomes increasingly common with age. Unlike acute inflammation, which is a healthy response to injury or infection, chronic inflammation damages cells and tissues, accelerating aging and increasing the risk of diseases like heart disease, diabetes, and Alzheimer&apos;s.</rdfs:comment>
+        <rdfs:label>Chronic inflammation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Cognitive_Maintenance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Cognitive_Maintenance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Well-being"/>
+        <rdfs:label>Cognitive Maintenance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Compression_of_Morbidity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Compression_of_Morbidity">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Biology"/>
+        <rdfs:comment>The compression of morbidity hypothesis by James Fries that if the age of onset of chronic disease symptoms can be postponed faster than the age of death, the time spent dealing with illness can be compressed into a shorter period of time and closer to the age of death.</rdfs:comment>
+        <rdfs:label>Compression of Morbidity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Deregulated_nutrient-sensing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Deregulated_nutrient-sensing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Deregulated nutrient sensing is the decline in the efficiency of pathways that cells use to sense nutrients and respond to metabolism changes. These pathways, including insulin and IGF-1 signaling, mTOR, sirtuins, and AMPK, play crucial roles in aging by affecting growth, energy metabolism, and cellular protection mechanisms.</rdfs:comment>
+        <rdfs:label>Deregulated nutrient sensing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Diet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Diet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Lifestyle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#correspondsWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Cognitive_Maintenance"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Diet</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Disabled_macroautophagy -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Disabled_macroautophagy">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Macroautophagy is a cellular cleanup process that degrades and recycles damaged cellular components. Its decline with age leads to the accumulation of cellular debris, contributing to cellular dysfunction, aging, and diseases.</rdfs:comment>
+        <rdfs:label>Disabled macroautophagy</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Disposable_soma_theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Disposable_soma_theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Biology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The disposable soma theory is a theory that evolving species have to make trade-offs; instead of investing in indefinite survival in an environment that is easy to die in, they invest in reproduction for the species to survive. There is a trade-off between maintaining and repairing the body versus growth and reproduction.</rdfs:comment>
+        <rdfs:label>Disposable soma theory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Dysbiosis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Dysbiosis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Dysbiosis is an imbalance in the microbial communities, particularly in the gut, which can disrupt the immune system, metabolism, and nutrient absorption. This imbalance is linked to numerous age-related conditions, such as inflammatory and metabolic diseases.</rdfs:comment>
+        <rdfs:label>Dysbiosis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Endurance_Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Endurance_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Active"/>
+        <rdfs:label>Endurance Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Environment -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Environment">
+        <rdfs:label>Environment</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Epigenetic_alterations -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Epigenetic_alterations">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Epigenetic alterations are changes in gene expression regulation without altering the DNA sequence. Aging is associated with epigenetic changes that can affect longevity, including DNA methylation patterns, histone modification, and chromatin remodeling, leading to the misregulation of genes.</rdfs:comment>
+        <rdfs:label>Epigenetic alterations</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetics"/>
+        <rdfs:label>Genes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetic_Disorders -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetic_Disorders">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetics"/>
+        <rdfs:comment>Many genetic disorders are linked with aging, such as neurodegenerative diseases like Alzheimer&apos;s. Genetic disorders are usually inherited, but factors like cognitive maintenance, social support, and positive emotion can all help prevent early onset.</rdfs:comment>
+        <rdfs:label>Genetic Disorders</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Biology"/>
+        <rdfs:comment>Genetics plays a large role in longevity, with many studies being done on to search for genes that can be linked specifically to longer life. However, it&apos;s also important to note that heritability of life-span accounts for &lt;= 35% of its variance in short-lived invertebrates and in mammals, so genetics isn&apos;t everything. However, it does play a large role in chronic illnesses and degenerative diseases.</rdfs:comment>
+        <rdfs:label>Genetics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genomic_instability -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genomic_instability">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Increased DNA damage and reduced repair capacity lead to mutations and chromosomal abnormalities. This instability is a key driver of aging and cancer, as it undermines cellular function and integrity.</rdfs:comment>
+        <rdfs:label>Genomic instability</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Hutchinson-Gilford_progeria_syndrome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Hutchinson-Gilford_progeria_syndrome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetic_Disorders"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The Hutchinson Gilford progeria syndrome is a genetic condition that causes children to age rapidly and dramatically.</rdfs:comment>
+        <rdfs:label>Hutchinson Gilford progeria syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Lifestyle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Lifestyle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Environment"/>
+        <rdfs:label>Lifestyle</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Longevity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Longevity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Well-being"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#combats"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Outcomes"/>
+        <rdfs:label>Longevity</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Loss_of_proteostasis -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Loss_of_proteostasis">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Loss of proteostasis is the breakdown in the regulation of protein synthesis, folding, trafficking, and degradation. As cells age, they become less capable of managing proteins correctly, leading to the accumulation of misfolded proteins and aggregates that can disrupt cellular function.</rdfs:comment>
+        <rdfs:label>Loss of proteostasis</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Mitochondrial_dysfunction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Mitochondrial_dysfunction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:label>Mitochondrial dysfunction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Outcomes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Outcomes">
+        <rdfs:label>Outcomes</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Pollution -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Pollution">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Environment"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#correspondsWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Poverty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>There is growing evidence that environmental contamination can generate changes in immunological and neurodevelopmental processes</rdfs:comment>
+        <rdfs:label>Pollution</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Positive_Emotion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Positive_Emotion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Socioemotional_Selectivity_Theory"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Well-being"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Positivity can lead to a top-down cognitive processing effect that can positively impact well-being.</rdfs:comment>
+        <rdfs:label>Positive Emotion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Poverty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Poverty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Childhood"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#correspondsWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Chronic_Stress"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#correspondsWith"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Pollution"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Poverty increases the likelihood and severity of chronic illness in children.</rdfs:comment>
+        <rdfs:label>Poverty</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Resistance_Training -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Resistance_Training">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Active"/>
+        <rdfs:label>Resistance Training</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Restricted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Restricted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Diet"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Longevity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Genes that extend life span mostly alter organism’s metabolism, especially the insulin-signaling pathway, which explains why restricted diet extends life (in moderation).</rdfs:comment>
+        <rdfs:label>Restricted</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Sedentary -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Sedentary">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Lifestyle"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#combats"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Active"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Sedentary</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Sitting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Sitting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Sedentary"/>
+        <rdfs:comment>Excess sitting reduces normal benefits of physical activity in terms of health and training adaptations. Interrupt your sitting every 30 minutes for improved BMI, blood pressure, glucose disposal, etc.</rdfs:comment>
+        <rdfs:label>Sitting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Social -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Social">
+        <rdfs:label>Social</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Social_Support -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Social_Support">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Social"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#combats"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Poverty"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>Social support and policy can help guard against the effects of stress and work to improve policies in environmental, social, and healthcare aspects.</rdfs:comment>
+        <rdfs:label>Social Support</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Socioemotional_Selectivity_Theory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Socioemotional_Selectivity_Theory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Social"/>
+        <rdfs:comment>Socioemotional Selectivity Theory is a theory of life-span development grounded in uniquely human ability to monitor time. An approach of endings (whether from aging, relocation, or illness), elicits motivational changes in which emotionally meaningful goals are prioritizied over exploration.</rdfs:comment>
+        <rdfs:label>Socioemotional Selectivity Theory</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Stem_cell_exhaustion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Stem_cell_exhaustion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Mitochondria are the cell&apos;s powerhouses, and their decline in function leads to reduced energy production and increased oxidative stress. This dysfunction is a key contributor to aging and many age-related diseases.</rdfs:comment>
+        <rdfs:label>Stem cell exhaustion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Telomere_attrition -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Telomere_attrition">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging"/>
+        <rdfs:comment>Telomeres are protective caps at the ends of chromosomes that shorten with each cell division. Excessive shortening can lead to cell senescence or apoptosis, limiting cellular lifespan and contributing to the aging process.</rdfs:comment>
+        <rdfs:label>Telomere attrition</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Weathering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Weathering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Chronic_Stress"/>
+        <rdfs:comment>Weathering is a process where the day-in, day-out effort of trying to be equal wears bodies down from chronic stress (happens more often in marginalized populations)</rdfs:comment>
+        <rdfs:label>Weathering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Well-being -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Well-being">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Outcomes"/>
+        <rdfs:label>Well-being</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Werner_Syndrome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Werner_Syndrome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Genetic_Disorders"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>A genetic disorder that causes rapid aging beginning in adolescence or young adulthood and also is associated with an increased risk of cancer.</rdfs:comment>
+        <rdfs:label>Werner Syndrome</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#12_Hallmarks_of_Aging">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Biology"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#contributesTo"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/susan/ontologies/2024/2/untitled-ontology-11#Aging"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:comment>The 12 hallmarks of aging are a framework used to organize and identify biological processes that contribute to aging,</rdfs:comment>
+        <rdfs:label>12 Hallmarks of Aging</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+

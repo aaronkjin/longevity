@@ -1,0 +1,7 @@
+# Download using pip install -r requirements.txt
+
+openai==0.28
+transformers
+rdflib
+python-dotenv
+sklearn
