@@ -1,6 +1,6 @@
 # Longevity Frontend
 
-<img width="483" alt="frontend" src="https://github.com/aaronkjin/longevity/assets/58490258/e5400692-0557-47a7-a8b5-93716492a32b">
+<img width="1000" alt="frontend" src="https://github.com/aaronkjin/longevity/assets/58490258/e5400692-0557-47a7-a8b5-93716492a32b">
 
 The frontend displays an intuitive, sleek UI, facilitating the input of user responses and displaying personalized recommendations based on the user's given genetic, social, and environmental factors based on our custom ontology.
 
@@ -35,6 +35,7 @@ Not for public release. Do not copy, do not distribute.
 ## Contact
 
 For inquiries or further information, reach out to us at:
+
 - aaronjin@stanford.edu.
 - kevinaw@stanford.edu.
 - leesusan@stanford.edu.
