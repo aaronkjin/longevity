@@ -47,10 +47,6 @@ Where OpenAI API is used to generate AI-powered recommendations, Transformers is
 
 - Protege
 
-## Contributing
-
-We welcome contributions! If you're interested in helping improve Longevity, please fork the repository and submit a pull request with your proposed changes. For major changes, please open an issue first to discuss what you would like to change.
-
 ## License
 
 Not for public release. Do not copy, do not distribute.
